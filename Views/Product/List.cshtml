@@ -1,0 +1,22 @@
+﻿@model Eksamen.ViewModels.ProductsViewModel
+
+ <form class="d-flex ms-auto mt-2" role="search" asp-controller="Product" asp-action="List" method="get">
+    <input name="searchString" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+<h1>List of Food(@Model.CurrentViewName View)</h1>
+<a href="/Product/Index">Table View</a>
+
+<p>
+    <a class="btn btn-secondary"
+       asp-controller="Product"
+       asp-action="Create">Add New Food</a>
+</p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var product in Model.Products)
+    {
+        <partial name="_List" model="product" />
+    }
+</div>

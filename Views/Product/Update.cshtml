@@ -1,0 +1,50 @@
+@model Eksamen.Models.Product
+
+
+<h2>Edit food product</h2>
+
+<form asp-asp-controller="Product" asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+
+    <div class="form-group">
+        <label for="Name">Product name</label>
+        <input type="text" name="Name" class="form-control" value="@Model.Name" required />
+    </div>
+        <input type="hidden" name="ProducerID" value="@Model.ProducerID" />
+
+    <div class="form-group">
+        <label for="Energy">Energy (kcal)</label>
+        <input type="number" name="Energy" class="form-control" value="@Model.Energy" required />
+    </div>
+    <div class="form-group">
+        <label for="Fat">Fat (g)</label>
+        <input type="number" name="Fat" class="form-control" value="@Model.Fat" required />
+    </div>
+    <div class="form-group">
+        <label for="Saturates">Saturates (g)</label>
+        <input type="number" name="Saturates" class="form-control" value="@Model.Saturates" required />
+    </div>
+    <div class="form-group">
+        <label for="Carbs">Carbs (g)</label>
+        <input type="number" name="Carbs" class="form-control" value="@Model.Carbs" required />
+    </div>
+    <div class="form-group">
+        <label for="Sugars">Sugars (g)</label>
+        <input type="number" name="Sugars" class="form-control" value="@Model.Sugars" required />
+    </div>
+    <div class="form-group">
+        <label for="Protein">Protein (g)</label>
+        <input type="number" name="Protein" class="form-control" value="@Model.Protein" required />
+    </div>
+    <div class="form-group">
+        <label for="Salt">Salt (g)</label>
+        <input type="number" name="Salt" class="form-control" value="@Model.Salt" required />
+    </div>
+    <div class="form-group">
+        <label>Upload picture</label>
+        <input type="file" name="ImageFile" class="form-control"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

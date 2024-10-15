@@ -1,0 +1,21 @@
+@model Eksamen.Models.Product
+
+
+@{
+    ViewBag.Title = "Delete food product";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<h2 style="color: orangered;">Confirm deletion</h2>
+
+<p>Are you sure you want to delete the product?"@Model.Name"?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.ProductId" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-controller="Product" asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+
+
+

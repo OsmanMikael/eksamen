@@ -1,0 +1,192 @@
+@model Eksamen.Models.Product
+
+<h3 class="my-5">Name: @Model.Name</h3>
+    <a asp-action="Index">Back to view Table</a>
+
+    <div class="row gx-5">
+        <img alt="image of @Model.Name" src="@Model.ImageUpload" class="img-fluid col-5" style="max-width: 400px; max-height: 400px"/>
+    </div>
+
+    <div>
+    <h4 style="color: blueviolet">Details</h4>
+    <hr />
+    <div class="conatiner" style="width: 40%">
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <th>ProductId</th>
+                    <td>@Model.ProductId</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <th>Company</th>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <th>ProducerID</th>
+                    <td>@Model.ProducerID</td>
+                </tr>
+                <tr>
+                    <th>Energy</th>
+                    <td>@Model.Energy</td>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <td>@Model.Fat</td>
+                </tr>
+                <tr>
+                    <th>Saturates</th>
+                    <td>@Model.Saturates</td>
+                </tr>
+                <tr>
+                    <th>Carbs</th>
+                    <td>@Model.Carbs</td>
+                </tr>
+                <tr>
+                    <th>Sugars</th>
+                    <td>@Model.Sugars</td>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <td>@Model.Protein</td>
+                </tr>
+                <tr>
+                    <th>Salt</th>
+                    <td>@Model.Salt</td>
+                </tr>
+                <tr>
+                    <th>MonoUns</th>
+                    <td>@Model.MonoUns</td>
+                </tr>
+                <tr>
+                    <th>PolyUns</th>
+                    <td>@Model.PolyUns</td>
+                </tr>
+                <tr>
+                    <th>Polyols</th>
+                    <td>@Model.Polyols</td>
+                </tr>
+                <tr>
+                    <th>Starch</th>
+                    <td>@Model.Starch</td>
+                </tr>
+                <tr>
+                    <th>Fiber</th>
+                    <td>@Model.Fiber</td>
+                </tr>
+                <tr>
+                    <th>VitaminA</th>
+                    <td>@Model.VitaminA</td>
+                </tr>
+                <tr>
+                    <th>VitaminD</th>
+                    <td>@Model.VitaminD</td>
+                </tr>
+                <tr>
+                    <th>VitaminE</th>
+                    <td>@Model.VitaminE</td>
+                </tr>
+                <tr>
+                    <th>VitaminK</th>
+                    <td>@Model.VitaminK</td>
+                </tr>
+                <tr>
+                    <th>VitaminC</th>
+                    <td>@Model.VitaminC</td>
+                </tr>
+                <tr>
+                    <th>Thiamine</th>
+                    <td>@Model.Thiamine</td>
+                </tr>
+                <tr>
+                    <th>Riboflavin</th>
+                    <td>@Model.Riboflavin</td>
+                </tr>
+                <tr>
+                    <th>Niacin</th>
+                    <td>@Model.Niacin</td>
+                </tr>
+                <tr>
+                    <th>VitaminB6</th>
+                    <td>@Model.VitaminB6</td>
+                </tr>
+                <tr>
+                    <th>FolicAcid</th>
+                    <td>@Model.FolicAcid</td>
+                </tr>
+                 <tr>
+                    <th>VitaminB12</th>
+                    <td>@Model.VitaminB12</td>
+                </tr>
+                 <tr>
+                    <th>Biotin</th>
+                    <td>@Model.Biotin</td>
+                </tr>
+                 <tr>
+                    <th>PantothenicAcid</th>
+                    <td>@Model.PantothenicAcid</td>
+                </tr>
+                 <tr>
+                    <th>Potassium</th>
+                    <td>@Model.Potassium</td>
+                </tr>
+                 <tr>
+                    <th>Chloride</th>
+                    <td>@Model.Chloride</td>
+                </tr>
+                 <tr>
+                    <th>Calcium</th>
+                    <td>@Model.Calcium</td>
+                </tr>
+                 <tr>
+                    <th>Phosphorus</th>
+                    <td>@Model.Phosphorus</td>
+                </tr>
+                 <tr>
+                    <th>Magnesium</th>
+                    <td>@Model.Magnesium</td>
+                </tr>
+                 <tr>
+                    <th>Iron</th>
+                    <td>@Model.Iron</td>
+                </tr>
+                 <tr>
+                    <th>Zinc</th>
+                    <td>@Model.Zinc</td>
+                </tr>
+                 <tr>
+                    <th>Copper</th>
+                    <td>@Model.Copper</td>
+                </tr>
+                 <tr>
+                    <th>Manganese</th>
+                    <td>@Model.Manganese</td>
+                </tr>
+                 <tr>
+                    <th>Selenium</th>
+                    <td>@Model.Selenium</td>
+                </tr>
+                 <tr>
+                    <th>Chromium</th>
+                    <td>@Model.Chromium</td>
+                </tr>
+                 <tr>
+                    <th>Molybdenum</th>
+                    <td>@Model.Molybdenum</td>
+                </tr>
+                 <tr>
+                    <th>Iodine</th>
+                    <td>@Model.Iodine</td>
+                </tr>
+
+            </table>
+    </div>
+    <p><a asp-action="List">Back to List View</a></p>
+</div>
+
+ 
+       
+    
+        
